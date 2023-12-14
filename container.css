@@ -1,0 +1,128 @@
+:root {
+    --bgr-color: #504f4f73;
+    --main-color: #191F3A;
+    --sub-color: #EAA023;
+    --text-color: #ffffff;
+    --bg-color: #0C1023;
+    --bd-color: #ffffff91;
+    --bl-color: black;
+}
+/* mua bán sản phẩm */
+#container{
+    width: 100%;
+    display: flex;
+}
+.container_product{
+    width: 25%;
+    height: 50%;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--bg-color);
+    width: 15%;
+}
+.container_product>h2{
+    border-bottom: 1px dashed var(--sub-color);
+    padding: 10px 0 0 10px;
+    text-align: center;
+    color: var(--sub-color);
+}
+.menu-items{
+    background-color: #191F3A;
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    display: flex;
+    border-radius: 0 20px 20px 0;
+}
+.menu-items>img{
+    width: 50px;
+    height: 60px;
+}
+.product-content{
+    text-decoration: none;
+    color: var(--text-color);
+    padding-top: 15px;
+    padding-left: 40px;
+}
+.product-content:hover{
+    color: lightcoral;
+    transition: all 0.5s;
+}
+/* giới thiệu */
+.container_main{
+    width: 65%;
+    margin: 10px;
+}
+.container_main>h1,h2{
+    color: var(--sub-color);
+    border-bottom: 1px dashed var(--sub-color);
+}
+.container_main>p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgba(196, 196, 196, 0.87);
+    margin-bottom: 20px;
+}
+    .news{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .flexbox-new{
+        text-decoration: none;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        width: 250px;
+        border: 1px solid white;
+        
+    }
+    .flexbox-new>img{
+        width: 250px;
+        height: 230px;
+    }
+    .flexbox-new>figcaption{
+        color: rgba(211, 211, 211, 0.705);
+        padding: 5px 20px 10px 20px;
+    }
+
+
+
+
+
+/* thi dấu giải */
+.container_game{
+    padding: 10px 0 0 0;
+    width: 20%;
+    height: 50%;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    background-color: var(--bg-color);
+    border-radius: 20px 0 0 20px;
+}
+.container_game>h2{
+    text-align: center;
+}
+.menu-game{
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 0 20px 20px 0px;
+    background-color: var(--main-color);
+}
+.menu-game>img{
+    float: left;
+    width: 65px;
+    height: 60px;
+}
+.menu-game>a{
+    text-align: center;
+    text-decoration: none;
+    color: rgba(211, 211, 211, 0.719);
+    padding-top: 10px;
+
+}
+.menu-game>a:hover{
+    color: lightcoral;
+}
+

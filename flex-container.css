@@ -1,0 +1,156 @@
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color);
+}
+/*table__flex-container-product*/
+
+
+.flex-container-product{
+        
+    background-color: var(--main-color);
+    height: 40%;
+}
+.container-product{
+    padding: 40px 0 0 20px;
+    color: var(--text-color);
+    display: flex; 
+    flex-direction: column;
+}
+.container-product > h2{
+    font-family: arial;
+    color: var(--sub-color);
+}
+.menu-items{
+    padding-top: 10px;
+    display: flex;
+    
+}
+.menu-items > img{
+    width: 60px;
+    height: 70px;
+    border-radius: 5px;
+}
+.menu-items > a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.product-content{
+    display: grid;
+    background-color: var(--main-color);
+    border-radius: 0 20px 20px 0;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--text-color);    
+
+}
+.product-money{
+    display: grid;
+    justify-content: flex-end;
+}
+.product-content > p:hover{
+    color: palevioletred;
+}
+.product-content> div :hover{
+}
+    
+
+/*flex-container-content*/
+.flex-container-content{
+    background-color:var(--main-color);
+    width: 60%;
+    height: 70%;
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+.flex-container-content> h1{
+    color: var(--sub-color);
+    font-family: Arial;
+    font-weight: 500pc;
+    border-bottom: 1px dashed var(--text-color);
+}
+.flex-container-content> h2{
+    color: var(--sub-color);
+    margin-top: 25px;
+    font-family: Arial;
+    font-weight: 500pc;
+    border-top: 1px dashed var(--text-color);
+}
+.flex-container-content > p{
+    font-size: 20px;
+    color: var(--text-color);
+}
+    /*flexbox-new con cua flex-container-content*/
+    .flexbox-new{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }   
+    .flexbox-new> a{
+        text-decoration: none;
+    }
+    .one {
+        background-color: var(--bg-color);
+        width: 27%;
+        margin-top: 20px;
+        border-radius: 10px;
+    } 
+    .one > img{
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 5px;
+        width: auto;
+        height: 200px;
+    }
+    .one > figcaption{
+        border-top: 1px dashed var(--bd-color);
+        color: var(--text-color);
+        font-size: 16px;
+        font-family: Arial;
+        padding: 10px;
+    }
+    .flexbox-new :hover{
+        color: var(--sub-color);
+    }
+ 
+/*flex-content-game*/
+.flex-container-game{
+    width: 20%;
+    background-color: var(--main-color);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 120vh;
+}
+.flex-container-game> h2{
+    text-align: center;
+    font-family: arial;
+    color: var(--sub-color);
+}
+.container-game {
+    margin-top: 30px;
+    display: grid;
+    flex-direction: column;
+}
+.container-game > div{
+    border-bottom: 2px dotted rgba(128, 128, 128, 0.692);
+}
+.container-game> a{
+    border-bottom: 2px solid var(--bd-color);
+    justify-content: center;
+    margin: 0 0 -40px 60px;
+    padding: 10px 0 10px 25px;
+    border-radius: 0 20px 20px 0 ;
+    background-color: var(--bg-color);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-family: arial;
+}
+.flex-container-game> div > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 3px solid rgb(123, 123, 123);
+}

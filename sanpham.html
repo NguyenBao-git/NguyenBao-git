@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<title>Slideshow - Canxem.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Css/flex-container-content.css" type="text/css">
+<style>
+    :root {
+            --bgr-color: #504f4f73;
+            --main-color: #191F3A;
+            --sub-color: #EAA023;
+            --text-color: #ffffff;
+            --bg-color: #0C1023;
+            --bd-color: #ffffff91;
+            --bl-color: black;
+        }
+h1{text-align: center; font-family: Arial;margin: 0;}
+h2{background-color: var(--main-color);
+     width: 9pc;padding: 5px 0 5px 8px;
+     color: var(--sub-color); box-sizing: border-box;margin: 0;}
+.mySlides3 {display:none; width:100%; height: 55pc;}
+.display-container{position:relative}
+/* Nav */
+.nav{display: grid; justify-content: center;}
+ul{ list-style-type: none;}
+li a{
+    border: 1.5px solid var(--bl-color);
+    background-color: var(--main-color);border-radius: 15px;color: var(--sub-color);
+    transition: all 0.3s;   /* hiệu ứng làm mờ dần*/
+    text-decoration: none; padding: 8px 16px;font-size: 20px;margin-left: 10px;}
+li a:hover{background-color: var(--bd-color);color: var(--bg-color);}
+li{padding: 5px 7px 5px 7px;float: left;}
+/*---Css Nút qua lại---*/
+.button-left{left:1%; font-size:20px}
+.button-right{right:1%; font-size:20px }
+.image-button{border:none;display:inline-block;padding:10px;height:50px;vertical-align:middle;overflow:hidden; color:#fff;background:#000;position:absolute;top:calc(50% - 25px); opacity:0.5;}
+.image-button:hover{color:#000;background:#ccc;}
+
+/*---Css Chấm tròn---*/
+.badge {text-align:center; margin-bottom:16px; font-size:20px;position:absolute;bottom:0;}
+.badge-white{color:#000!important;background-color:#fff!important}
+.image-badge {display:inline-block;border-radius:50%;height:14px;width:14px; border:1px solid #ccc;}
+.image-badge:hover{background:#fff;}
+
+
+
+
+</style>
+<body>
+
+
+<div class="display-container">
+    <h2>VSP Billiard</h2>
+    <h1 class="">Trang Sản Phẩm</h1>
+    <img class="mySlides3" src="https://th.bing.com/th/id/OIP.h8jedv9lbonBxT-sYf5JGwHaE7?pid=ImgDet&rs=1">
+    <img class="mySlides3" src="https://th.bing.com/th/id/OIP.2z5Lf05rMPPaoE7ipYPT4gHaE8?pid=ImgDet&rs=1">
+    <img class="mySlides3" src="https://th.bing.com/th/id/OIP.TZ4LK9WMfNlGOa_ZbxlwrwHaEd?pid=ImgDet&rs=1">
+    <img class="mySlides3" src="https://alison-chang.com/wp-content/uploads/2022-APF-Asian-9-Ball-Open-Ko-Pin-Yi-play.jpg">
+    <button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
+
+  <div class="badge" style="width:100%">
+
+    <span class="image-badge" onclick="currentDiv(1)"></span>
+    <span class="image-badge" onclick="currentDiv(2)"></span>
+    <span class="image-badge" onclick="currentDiv(3)"></span>
+    <span class="image-badge" onclick="currentDiv(4)"></span>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="pages/sanpham.html">Sản phẩm</a></li>
+            <li><a href="pages/dichvu">Dịch vụ</a></li>
+            <li><a href="pages/gioithieu">Giới thiệu</a></li>
+            <li><a href="pages/giaidau">Giải đấu</a></li>
+            <li><a href="pages/huongdan">Hướng dẫn</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+    <button id="Btnproduct">+ Thêm sản phẩm</button>
+<div>
+    <div id="flex-container">                
+        <h1>Sản phẩm nổi bật</h1>
+
+        <form class="flex-container-product" action="" method="">
+            <div class="container-product" >
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/1e4e5002a5e465ba3cf5-removebg-preview.png" alt="">
+                    <a href="" class="product-content">
+                        <p>Chuôi cơ Predator</p>   
+                        <div class="product-money">1.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/DS.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Găng tay câu lạc bộ</p>
+                        <div class="product-money">500.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/bdc95f128e7d4c23156c.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Cơ nhảy Predator</p>
+                        <div class="product-money">7.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/co%20ca%20can%201.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Chuôi cơ Mit</p>
+                        <div class="product-money">5.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/C%C6%A1%20s%C6%A1n%20(1).png" alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida phăng</p>
+                        <div class="product-money">30.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://saigonbilliards.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/12/Ban-Bida-Aileex-9020-mau-Nau-.jpg.webp"  alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida lỗ Aileex</p>
+                        <div class="product-money">50.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/Bi%20pool%20nh%E1%BA%ADp%20-%20logo.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida lỗ mini</p>
+                        <div class="product-money">1.000.000</div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="container-product" >
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/B%C3%A0n%20Hollywood%201.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Chuôi cơ Predator</p>   
+                        <div class="product-money">1.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/Bao%20Tay%20IBS-1.PNG"  alt="">
+                    <a href="" class="product-content">
+                        <p>Găng tay câu lạc bộ</p>
+                        <div class="product-money">500.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/C%C3%A1n%20s%C6%A1n.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Cơ nhảy Predator</p>
+                        <div class="product-money">7.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/Bi%20pool%20nh%E1%BA%ADp%20-%20logo.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Chuôi cơ Mit</p>
+                        <div class="product-money">5.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/d15ac2719f105c4e0501%20(1).jpg" alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida phăng</p>
+                        <div class="product-money">30.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/Picture12.png"  alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida lỗ Aileex</p>
+                        <div class="product-money">50.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://saigonbilliards.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/12/ban-bida-mini-90cm-.jpg.webp"  alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida lỗ mini</p>
+                        <div class="product-money">1.000.000</div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="container-product" >
+                <div class="menu-items">
+                    <img src="https://saigonbilliards.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/02/Chuoi-Co-Bida-Lo-Predator-9K-3_.jpg.webp" alt="">
+                    <a href="" class="product-content">
+                        <p>Chuôi cơ Predator</p>   
+                        <div class="product-money">1.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://salt.tikicdn.com/cache/200x280/ts/product/de/ee/10/fcd96ed8b9ef269b2202275deb4da828.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Găng tay câu lạc bộ</p>
+                        <div class="product-money">500.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://saigonbilliards.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2023/03/co-nhay-predator-air-2.png.webp"  alt="">
+                    <a href="" class="product-content">
+                        <p>Cơ nhảy Predator</p>
+                        <div class="product-money">7.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/3ec8628c26ede5b3bcfc-removebg-preview-3.png"  alt="">
+                    <a href="" class="product-content">
+                        <p>Chuôi cơ Mit</p>
+                        <div class="product-money">5.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://saigonbilliards.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/03/ban-bida-phang-min-mau-2022-1-min-750x1000.jpg.webp" alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida phăng</p>
+                        <div class="product-money">30.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://www.bidathinhkent.com/tenants/thinhkent/upload/banner/Picture3.jpg"  alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida lỗ Aileex</p>
+                        <div class="product-money">50.000.000</div>
+                    </a>
+                </div>
+                <div class="menu-items">
+                    <img src="https://saigonbilliards.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2022/12/ban-bida-mini-90cm-.jpg.webp"  alt="">
+                    <a href="" class="product-content">
+                        <p>Bàn bida lỗ mini</p>
+                        <div class="product-money">1.000.000</div>
+                    </a>
+                </div>
+                
+            </div>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("image-badge");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" badge-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " badge-white";
+}
+</script>
+
+</body>
+</html> 
